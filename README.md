@@ -31,6 +31,84 @@
 * Include the router, firewall, switch, server, NAS, access points, endpoint devices, UPS, and security cameras.
 * Illustrating their connections and placements.
 
+  In Cisco Packet Tracer, the network diagram would visually represent the connectivity and arrangement of your network components. Here’s a rough idea of how your setup might look:
+
+### Visual Representation in Cisco Packet Tracer
+
+1. **Router**: Central device, usually placed at the top.
+2. **Firewall**: Directly connected to the router, placed below it.
+3. **Switch**: Connected to the firewall, placed below it.
+4. **Access Points**: Connected to the switch, placed around the office layout.
+5. **Server and NAS**: Connected to the switch, placed in the server area.
+6. **PCs**: Connected to the switch, placed on desks.
+7. **Security Cameras**: Connected to the switch, placed at strategic points.
+8. **UPS**: Represented by annotations or connected to critical devices.
+
+### Detailed Steps in Packet Tracer
+
+#### Step 1: Adding Devices
+
+- **Router**: Drag a router from the Network Devices section onto the workspace.
+- **Firewall**: Drag a firewall or another router to represent the firewall.
+- **Switch**: Drag a switch onto the workspace.
+- **Access Points**: Drag multiple access points onto the workspace.
+- **Server**: Drag a server onto the workspace.
+- **PCs**: Drag 11 PCs onto the workspace.
+- **NAS**: Drag another server or NAS device onto the workspace.
+- **Security Cameras**: Drag IoT cameras or another end device onto the workspace.
+
+#### Step 2: Connecting Devices
+
+- Use the "Connections" tool to connect devices using Copper Straight-Through cables.
+- Connect the Router to the Firewall.
+- Connect the Firewall to the Switch.
+- Connect the Switch to the Access Points, Server, NAS, PCs, and Security Cameras.
+
+#### Step 3: Configuring Devices
+
+- Double-click each device to open its configuration settings.
+- Assign IP addresses, set up routing protocols, configure SSIDs, etc.
+
+### Rough Layout
+
+Here’s a rough visual representation (as an ASCII diagram) to give you an idea of the layout:
+
+```plaintext
+   [Router]
+      |
+   [Firewall]
+      |
+   [Switch]---------+
+      |             |
+    +--+--+         |
+    |  |  |         |
+[AP1][AP2][Server]  [NAS]
+ |    |     |       |
+[PC1][PC2] [PC3]  [PC4]
+      ...    ...
+[PC10][PC11] [Camera]
+```
+
+### Finalizing in Packet Tracer
+
+#### Example Configuration:
+
+1. **Router**: Assign an IP address and configure basic settings.
+2. **Firewall**: Configure firewall rules and IP settings.
+3. **Switch**: Set up VLANs if necessary and configure port settings.
+4. **Access Points**: Set up wireless network settings (SSID, security).
+5. **Server/NAS**: Configure storage settings and services.
+6. **PCs**: Assign IP addresses and configure network settings.
+7. **Security Cameras**: Configure IP settings and connect to the network.
+8. **UPS**: Annotate its presence and connect critical devices.
+
+#### Saving and Exporting:
+
+- Save the project in Packet Tracer.
+- Export the diagram as an image if needed.
+
+This should give you a clear and organized layout of your office network in Cisco Packet Tracer, ready for further configuration and testing.
+
 
 ### Description of Components and Their Purpose
 
@@ -75,18 +153,4 @@ To secure the office network, various hardware and software components have been
 **Security Information and Event Management (SIEM)**: SIEM solutions aggregate and analyze security events and logs, providing valuable insights into potential security incidents and helping to coordinate responses.
 
 
-```
-   [Router]
-      |
-   [Firewall]
-      |
-   [Switch]---------+
-      |             |
-    +--+--+         |
-    |  |  |         |
-[AP1][AP2][Server]  [NAS]
- |    |     |       |
-[PC1][PC2] [PC3]  [PC4]
-      ...    ...
-[PC10][PC11] [Camera]
-```
+
