@@ -31,21 +31,6 @@
 * Include the router, firewall, switch, server, NAS, access points, endpoint devices, UPS, and security cameras.
 * Illustrating their connections and placements.
 
-  ```
-     [Router]
-      |
-   [Firewall]
-      |
-   [Switch]---------+
-      |             |
-    +--+--+         |
-    |  |  |         |
-[AP1][AP2][Server]  [NAS]
- |    |     |       |
-[PC1][PC2] [PC3]  [PC4]
-      ...    ...
-[PC10][PC11] [Camera]
-```
 
 ### Description of Components and Their Purpose
 
@@ -89,4 +74,19 @@ To secure the office network, various hardware and software components have been
 
 **Security Information and Event Management (SIEM)**: SIEM solutions aggregate and analyze security events and logs, providing valuable insights into potential security incidents and helping to coordinate responses.
 
-By implementing these components, the office network will be well-protected against a wide range of security threats, ensuring the integrity, confidentiality, and availability of the network and its data.
+
+```
+   [Router]
+      |
+   [Firewall]
+      |
+   [Switch]---------+
+      |             |
+    +--+--+         |
+    |  |  |         |
+[AP1][AP2][Server]  [NAS]
+ |    |     |       |
+[PC1][PC2] [PC3]  [PC4]
+      ...    ...
+[PC10][PC11] [Camera]
+```
